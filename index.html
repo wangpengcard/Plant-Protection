@@ -107,9 +107,6 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
                 <p class="text-[10px] text-green-200">全周期植保 · 动态复配 · 成本精算（所有内容只作为参考，不构成任何建议和指导）</p>
             </div>
         </div>
-        <button class="flex items-center gap-1 bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-full text-xs font-bold border border-white/20 transition" onclick="downloadApp()">
-            <span class="material-symbols-outlined text-sm">download</span> 保存
-        </button>
     </div>
 </header>
 <!-- Navigation -->
@@ -1211,13 +1208,6 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
         });
     }
 
-    function downloadApp() {
-        const blob = new Blob([document.documentElement.outerHTML], {type:'text/html'});
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = "合记农业_Pro_v4.5.html";
-        a.click();
-    }
 </script>
 
 
