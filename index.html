@@ -3,7 +3,7 @@
 <script class="injected-ffc2e83d85">
 (function(){'use strict';function q(b){var c=0;return function(){return c<b.length?{done:!1,value:b[c++]}:{done:!0}}}function t(b){var c=typeof Symbol!="undefined"&&Symbol.iterator&&b[Symbol.iterator];if(c)return c.call(b);if(typeof b.length=="number")return{next:q(b)};throw Error(String(b)+" is not an iterable or ArrayLike");}var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,c,g){if(b==Array.prototype||b==Object.prototype)return b;b[c]=g.value;return b};
 function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var c=0;c<b.length;++c){var g=b[c];if(g&&g.Math==Math)return g}throw Error("Cannot find global object");}var w=v(this);function x(b,c){if(c)a:{var g=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var l=b[h];if(!(l in g))break a;g=g[l]}b=b[b.length-1];h=g[b];c=c(h);c!=h&&c!=null&&u(g,b,{configurable:!0,writable:!0,value:c})}}
-function y(){this.j=!1;this.g=null;this.u=void 0;this.h=1;this.v=this.l=0;this.i=null}function z(b){if(b.j)throw new TypeError("Generator is already running");b.j=!0}y.prototype.o=function(b){this.u=b};function A(b,c){b.i={I:c,J:!0};b.h=b.l||b.v}y.prototype.return=function(b){this.i={return:b};this.h=this.v};function B(b){this.g=new y;this.h=b}function E(b,c){z(b.g);var g=b.g.g;if(g)return F(b,"return"in g?g["return"]:function(h){return{value:h,done:!0}},c,b.g.return);b.g.return(c);return G(b)}
+function y(){this.j=!1;this.g=null;this.u=void 0;this.h=1;this.v=this.l=0;this.i=null}y.prototype.o=function(b){this.u=b};function A(b,c){b.i={I:c,J:!0};b.h=b.l||b.v}y.prototype.return=function(b){this.i={return:b};this.h=this.v};function B(b){this.g=new y;this.h=b}function E(b,c){z(b.g);var g=b.g.g;if(g)return F(b,"return"in g?g["return"]:function(h){return{value:h,done:!0}},c,b.g.return);b.g.return(c);return G(b)}
 function F(b,c,g,h){try{var l=c.call(b.g.g,g);if(!(l instanceof Object))throw new TypeError("Iterator result "+l+" is not an object");if(!l.done)return b.g.j=!1,l;var m=l.value}catch(f){return b.g.g=null,A(b.g,f),G(b)}b.g.g=null;h.call(b.g,m);return G(b)}function G(b){for(;b.g.h;)try{var c=b.h(b.g);if(c)return b.g.j=!1,{value:c.value,done:!1}}catch(g){b.g.u=void 0,A(b.g,g)}b.g.j=!1;if(b.g.i){c=b.g.i;b.g.i=null;if(c.J)throw c.I;return{value:c.return,done:!0}}return{value:void 0,done:!0}}
 function H(b){this.next=function(c){z(b.g);b.g.g?c=F(b,b.g.g.next,c,b.g.o):(b.g.o(c),c=G(b));return c};this.throw=function(c){z(b.g);b.g.g?c=F(b,b.g.g["throw"],c,b.g.o):(A(b.g,c),c=G(b));return c};this.return=function(c){return E(b,c)};this[Symbol.iterator]=function(){return this}}function I(b){function c(h){return b.next(h)}function g(h){return b.throw(h)}return new Promise(function(h,l){function m(f){f.done?h(f.value):Promise.resolve(f.value).then(c,g).then(m,l)}m(b.next())})}
 x("Symbol",function(b){function c(m){if(this instanceof c)throw new TypeError("Symbol is not a constructor");return new g(h+(m||"")+"_"+l++,m)}function g(m,f){this.g=m;u(this,"description",{configurable:!0,writable:!0,value:f})}if(b)return b;g.prototype.toString=function(){return this.g};var h="jscomp_symbol_"+(Math.random()*1E9>>>0)+"_",l=0;return c});
@@ -37,7 +37,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>农业·玉米种植智能辅助 Pro v4.5</title>
+    <title>农业·玉米种植智能辅助 Pro v4.6</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Material Icons -->
@@ -81,7 +81,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
         .formula-card:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
         .char-circle { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; color: white; margin-right: 12px; flex-shrink: 0; }
     </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.left-1{left:0.25rem}.right-0{right:0px}.top-0{top:0px}.top-2{top:0.5rem}.top-8{top:2rem}.z-10{z-index:10}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.mx-1{margin-left:0.25rem;margin-right:0.25rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-1{margin-left:0.25rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-auto{margin-top:auto}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-2{height:0.5rem}.h-4{height:1rem}.h-40{height:10rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-1\/3{width:33.333333%}.w-12{width:3rem}.w-16{width:4rem}.w-20{width:5rem}.w-4{width:1rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.flex-grow{flex-grow:1}.cursor-pointer{cursor:pointer}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.break-words{overflow-wrap:break-word}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-bl{border-bottom-left-radius:0.25rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t-4{border-top-width:4px}.border-blue-100{--tw-border-opacity:1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-blue-300{--tw-border-opacity:1;border-color:rgb(147 197 253 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-green-100{--tw-border-opacity:1;border-color:rgb(220 252 231 / var(--tw-border-opacity, 1))}.border-green-200{--tw-border-opacity:1;border-color:rgb(187 247 208 / var(--tw-border-opacity, 1))}.border-green-300{--tw-border-opacity:1;border-color:rgb(134 239 172 / var(--tw-border-opacity, 1))}.border-green-600{--tw-border-opacity:1;border-color:rgb(22 163 74 / var(--tw-border-opacity, 1))}.border-orange-100{--tw-border-opacity:1;border-color:rgb(255 237 213 / var(--tw-border-opacity, 1))}.border-orange-200{--tw-border-opacity:1;border-color:rgb(254 215 170 / var(--tw-border-opacity, 1))}.border-red-100{--tw-border-opacity:1;border-color:rgb(254 226 226 / var(--tw-border-opacity, 1))}.border-red-500{--tw-border-opacity:1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-yellow-100{--tw-border-opacity:1;border-color:rgb(254 249 195 / var(--tw-border-opacity, 1))}.border-yellow-200{--tw-border-opacity:1;border-color:rgb(254 240 138 / var(--tw-border-opacity, 1))}.border-yellow-500{--tw-border-opacity:1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-cyan-600{--tw-bg-opacity:1;background-color:rgb(8 145 178 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-green-800{--tw-bg-opacity:1;background-color:rgb(22 101 52 / var(--tw-bg-opacity, 1))}.bg-green-900{--tw-bg-opacity:1;background-color:rgb(20 83 45 / var(--tw-bg-opacity, 1))}.bg-orange-50{--tw-bg-opacity:1;background-color:rgb(255 247 237 / var(--tw-bg-opacity, 1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-yellow-50{--tw-bg-opacity:1;background-color:rgb(254 252 232 / var(--tw-bg-opacity, 1))}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.bg-yellow-600{--tw-bg-opacity:1;background-color:rgb(202 138 4 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-\[url\(\'https\:\/\/www\.transparenttextures\.com\/patterns\/cubes\.png\'\)\]{background-image:url('https://www.transparenttextures.com/patterns/cubes.png')}.p-1{padding:0.25rem}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:0.5rem}.pb-4{padding-bottom:1rem}.pl-4{padding-left:1rem}.pt-1{padding-top:0.25rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-6xl{font-size:3.75rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[12px\]{font-size:12px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-green-200{--tw-text-opacity:1;color:rgb(187 247 208 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-green-700{--tw-text-opacity:1;color:rgb(21 128 61 / var(--tw-text-opacity, 1))}.text-green-800{--tw-text-opacity:1;color:rgb(22 101 52 / var(--tw-text-opacity, 1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-orange-800{--tw-text-opacity:1;color:rgb(154 52 18 / var(--tw-text-opacity, 1))}.text-orange-900{--tw-text-opacity:1;color:rgb(124 45 18 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-yellow-600{--tw-text-opacity:1;color:rgb(202 138 4 / var(--tw-text-opacity, 1))}.text-yellow-700{--tw-text-opacity:1;color:rgb(161 98 7 / var(--tw-text-opacity, 1))}.text-yellow-800{--tw-text-opacity:1;color:rgb(133 77 14 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-10{opacity:0.1}.opacity-50{opacity:0.5}.opacity-70{opacity:0.7}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-500{transition-duration:500ms}.duration-300{transition-duration:300ms}.hover\:border-green-500:hover{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.hover\:bg-green-50:hover{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.hover\:bg-red-50:hover{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:bg-yellow-50:hover{--tw-bg-opacity:1;background-color:rgb(254 252 232 / var(--tw-bg-opacity, 1))}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.focus\:border-green-500:focus{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.focus\:border-orange-500:focus{--tw-border-opacity:1;border-color:rgb(249 115 22 / var(--tw-border-opacity, 1))}.focus\:border-yellow-500:focus{--tw-border-opacity:1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-green-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(34 197 94 / var(--tw-ring-opacity, 1))}.has-\[\:checked\]\:border-green-500:has(:checked){--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.has-\[\:checked\]\:border-green-600:has(:checked){--tw-border-opacity:1;border-color:rgb(22 163 74 / var(--tw-border-opacity, 1))}.has-\[\:checked\]\:border-red-500:has(:checked){--tw-border-opacity:1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.has-\[\:checked\]\:border-yellow-500:has(:checked){--tw-border-opacity:1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.has-\[\:checked\]\:bg-green-100:has(:checked){--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.has-\[\:checked\]\:bg-green-50:has(:checked){--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.has-\[\:checked\]\:bg-red-100:has(:checked){--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.has-\[\:checked\]\:bg-yellow-100:has(:checked){--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}@media (min-width: 768px){.md\:block{display:block}.md\:inline{display:inline}.md\:w-auto{width:auto}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:p-6{padding:1.5rem}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}.md\:text-xs{font-size:0.75rem;line-height:1rem}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.left-1{left:0.25rem}.right-0{right:0px}.top-0{top:0px}.top-2{top:0.5rem}.top-8{top:2rem}.z-10{z-index:10}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.mx-1{margin-left:0.25rem;margin-right:0.25rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-1{margin-left:0.25rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-auto{margin-top:auto}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-2{height:0.5rem}.h-4{height:1rem}.h-40{height:10rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-1\/3{width:33.333333%}.w-12{width:3rem}.w-16{width:4rem}.w-20{width:5rem}.w-4{width:1rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.flex-grow{flex-grow:1}.cursor-pointer{cursor:pointer}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.break-words{overflow-wrap:break-word}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-bl{border-bottom-left-radius:0.25rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t-4{border-top-width:4px}.border-blue-100{--tw-border-opacity:1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-blue-300{--tw-border-opacity:1;border-color:rgb(147 197 253 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-green-100{--tw-border-opacity:1;border-color:rgb(220 252 231 / var(--tw-border-opacity, 1))}.border-green-200{--tw-border-opacity:1;border-color:rgb(187 247 208 / var(--tw-border-opacity, 1))}.border-green-300{--tw-border-opacity:1;border-color:rgb(134 239 172 / var(--tw-border-opacity, 1))}.border-green-600{--tw-border-opacity:1;border-color:rgb(22 163 74 / var(--tw-border-opacity, 1))}.border-orange-100{--tw-border-opacity:1;border-color:rgb(255 237 213 / var(--tw-border-opacity, 1))}.border-orange-200{--tw-border-opacity:1;border-color:rgb(254 215 170 / var(--tw-border-opacity, 1))}.border-red-100{--tw-border-opacity:1;border-color:rgb(254 226 226 / var(--tw-border-opacity, 1))}.border-red-500{--tw-border-opacity:1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-yellow-100{--tw-border-opacity:1;border-color:rgb(254 249 195 / var(--tw-border-opacity, 1))}.border-yellow-200{--tw-border-opacity:1;border-color:rgb(254 240 138 / var(--tw-border-opacity, 1))}.border-yellow-500{--tw-border-opacity:1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-cyan-600{--tw-bg-opacity:1;background-color:rgb(8 145 178 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-green-800{--tw-bg-opacity:1;background-color:rgb(22 101 52 / var(--tw-bg-opacity, 1))}.bg-green-900{--tw-bg-opacity:1;background-color:rgb(20 83 45 / var(--tw-bg-opacity, 1))}.bg-orange-50{--tw-bg-opacity:1;background-color:rgb(255 247 237 / var(--tw-bg-opacity, 1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-yellow-50{--tw-bg-opacity:1;background-color:rgb(254 252 232 / var(--tw-bg-opacity, 1))}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.bg-yellow-600{--tw-bg-opacity:1;background-color:rgb(202 138 4 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-\[url\('https\:\/\/www\.transparenttextures\.com\/patterns\/cubes\.png'\)\]{background-image:url('https://www.transparenttextures.com/patterns/cubes.png')}.p-1{padding:0.25rem}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:0.5rem}.pb-4{padding-bottom:1rem}.pl-4{padding-left:1rem}.pt-1{padding-top:0.25rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-6xl{font-size:3.75rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[12px\]{font-size:12px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-green-200{--tw-text-opacity:1;color:rgb(187 247 208 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-green-700{--tw-text-opacity:1;color:rgb(21 128 61 / var(--tw-text-opacity, 1))}.text-green-800{--tw-text-opacity:1;color:rgb(22 101 52 / var(--tw-text-opacity, 1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-orange-800{--tw-text-opacity:1;color:rgb(154 52 18 / var(--tw-text-opacity, 1))}.text-orange-900{--tw-text-opacity:1;color:rgb(124 45 18 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-yellow-600{--tw-text-opacity:1;color:rgb(202 138 4 / var(--tw-text-opacity, 1))}.text-yellow-700{--tw-text-opacity:1;color:rgb(161 98 7 / var(--tw-text-opacity, 1))}.text-yellow-800{--tw-text-opacity:1;color:rgb(133 77 14 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-10{opacity:0.1}.opacity-50{opacity:0.5}.opacity-70{opacity:0.7}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-500{transition-duration:500ms}.duration-300{transition-duration:300ms}.hover\:border-green-500:hover{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.hover\:bg-green-50:hover{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.hover\:bg-red-50:hover{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:bg-yellow-50:hover{--tw-bg-opacity:1;background-color:rgb(254 252 232 / var(--tw-bg-opacity, 1))}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.focus\:border-green-500:focus{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.focus\:border-orange-500:focus{--tw-border-opacity:1;border-color:rgb(249 115 22 / var(--tw-border-opacity, 1))}.focus\:border-yellow-500:focus{--tw-border-opacity:1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-green-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(34 197 94 / var(--tw-ring-opacity, 1))}.has-\[\:checked\]\:border-green-500:has(:checked){--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.has-\[\:checked\]\:border-green-600:has(:checked){--tw-border-opacity:1;border-color:rgb(22 163 74 / var(--tw-border-opacity, 1))}.has-\[\:checked\]\:border-red-500:has(:checked){--tw-border-opacity:1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.has-\[\:checked\]\:border-yellow-500:has(:checked){--tw-border-opacity:1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.has-\[\:checked\]\:bg-green-100:has(:checked){--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.has-\[\:checked\]\:bg-green-50:has(:checked){--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.has-\[\:checked\]\:bg-red-100:has(:checked){--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.has-\[\:checked\]\:bg-yellow-100:has(:checked){--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}@media (min-width: 768px){.md\:block{display:block}.md\:inline{display:inline}.md\:w-auto{width:auto}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:p-6{padding:1.5rem}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}.md\:text-xs{font-size:0.75rem;line-height:1rem}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
 <body class="flex flex-col min-h-screen">
 <!-- Network Bar -->
 <div class="text-green-400 text-[10px] py-2 px-4 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 transition-colors duration-500 bg-green-900" id="network-bar">
@@ -232,325 +232,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
                     </select>
                 </div>
             </div>
-            <div class="space-y-6" id="protection-list"><div class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition duration-300">
-                <div class="p-4 border-b border-gray-200 bg-white flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-green-100 p-2 rounded-full text-green-700">
-                            <span class="material-symbols-outlined">spa</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 text-lg">VE 出苗期 (Emergence)</h4>
-                            <div class="flex gap-2 text-[10px] mt-1">
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">thermostat</span> 地温稳定 &gt;10℃
-                                </span>
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">water_drop</span> 持水量 60-70%
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-auto">
-                        <span class="text-xs font-bold text-red-500 bg-red-50 px-2 py-1 rounded border border-red-100 block md:inline text-center">
-                            ⚠️ 查苗补种：缺苗&gt;10%应及时补种或移栽。板结土壤需破除。
-                        </span>
-                    </div>
-                </div>
-                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-2">
-                        <p class="text-sm text-gray-600 leading-relaxed">根系建立与全苗关键期。重点防地下害虫、根腐病及杂草。低温(&lt;10℃)或除草剂残留可致'螺旋状中胚轴'，造成出苗失败。</p>
-                        <div class="mt-4">
-                            <label class="text-xs font-bold text-gray-500 block mb-1">选择植保方案:</label>
-                            <select class="w-full border-2 border-green-200 rounded p-2 text-sm font-bold text-green-800 bg-white focus:border-green-500 outline-none transition" onchange="updateRecipeDetails('VE', this.value)">
-                                <option value="0">方案A: 常规种衣剂 (基础版)</option><option value="1">方案B: 双效加强版 (推荐)</option><option value="2">方案C: 封闭除草套餐 (播后苗前)</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded border border-gray-200 p-3 shadow-inner" id="details-VE">
-            <div class="h-full flex flex-col justify-center space-y-2">
-                <div class="border-b pb-2 mb-1">
-                    <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">配方成分</span>
-                    <div class="text-sm font-bold text-green-700 break-words">苯醚甲环唑 + 噻虫嗪</div>
-                </div>
-                <div class="grid grid-cols-2 gap-2 text-xs">
-                    <div>
-                        <span class="text-green-600 font-bold block">👍 优点</span>
-                        <span class="text-gray-500">成本低，对常见蚜虫、丝黑穗病有效。</span>
-                    </div>
-                    <div>
-                        <span class="text-red-500 font-bold block">👎 缺点/注意</span>
-                        <span class="text-gray-500">对根腐病及顽固地下害虫持效期较短。</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-            </div><div class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition duration-300">
-                <div class="p-4 border-b border-gray-200 bg-white flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-green-100 p-2 rounded-full text-green-700">
-                            <span class="material-symbols-outlined">grass</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 text-lg">V3-V5 苗期 (Seedling)</h4>
-                            <div class="flex gap-2 text-[10px] mt-1">
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">thermostat</span> 日均 18-22℃
-                                </span>
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">water_drop</span> 适度蹲苗
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-auto">
-                        <span class="text-xs font-bold text-red-500 bg-red-50 px-2 py-1 rounded border border-red-100 block md:inline text-center">
-                            ⚠️ 除草剂药害预警：避开高温，避开3叶前5叶后。紫苗通常随气温回升消失。
-                        </span>
-                    </div>
-                </div>
-                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-2">
-                        <p class="text-sm text-gray-600 leading-relaxed">除草最佳窗口期。生长点位于地下(V6前)，对轻微霜冻/冰雹有耐受力。如遇低温/缺磷/根系受阻，叶片可能变紫(花青素积累)。</p>
-                        <div class="mt-4">
-                            <label class="text-xs font-bold text-gray-500 block mb-1">选择植保方案:</label>
-                            <select class="w-full border-2 border-green-200 rounded p-2 text-sm font-bold text-green-800 bg-white focus:border-green-500 outline-none transition" onchange="updateRecipeDetails('V3', this.value)">
-                                <option value="0">方案A: 标准除草 (安全型)</option><option value="1">方案B: 苗后除草+提苗复配</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded border border-gray-200 p-3 shadow-inner" id="details-V3">
-            <div class="h-full flex flex-col justify-center space-y-2">
-                <div class="border-b pb-2 mb-1">
-                    <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">配方成分</span>
-                    <div class="text-sm font-bold text-green-700 break-words">烟嘧磺隆·莠去津 + 安全剂</div>
-                </div>
-                <div class="grid grid-cols-2 gap-2 text-xs">
-                    <div>
-                        <span class="text-green-600 font-bold block">👍 优点</span>
-                        <span class="text-gray-500">杀草谱广，对玉米相对安全。</span>
-                    </div>
-                    <div>
-                        <span class="text-red-500 font-bold block">👎 缺点/注意</span>
-                        <span class="text-gray-500">对由于环境压力大的弱苗可能有轻微抑制。</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-            </div><div class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition duration-300">
-                <div class="p-4 border-b border-gray-200 bg-white flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-green-100 p-2 rounded-full text-green-700">
-                            <span class="material-symbols-outlined">nature</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 text-lg">V6-V8 拔节期 (Jointing)</h4>
-                            <div class="flex gap-2 text-[10px] mt-1">
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">thermostat</span> 生长旺盛期
-                                </span>
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">water_drop</span> 需水增加
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-auto">
-                        <span class="text-xs font-bold text-red-500 bg-red-50 px-2 py-1 rounded border border-red-100 block md:inline text-center">
-                            ⚠️ 追肥提示：结合降雨或灌溉追施氮肥。若遇洪涝，淹水不可超2-4天。
-                        </span>
-                    </div>
-                </div>
-                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-2">
-                        <p class="text-sm text-gray-600 leading-relaxed">生长点出土，茎秆快速伸长。节根成为主要根系。此时若地表干旱，易发生'无根/倒伏玉米'综合征(Rootless Corn)。需肥临界期。</p>
-                        <div class="mt-4">
-                            <label class="text-xs font-bold text-gray-500 block mb-1">选择植保方案:</label>
-                            <select class="w-full border-2 border-green-200 rounded p-2 text-sm font-bold text-green-800 bg-white focus:border-green-500 outline-none transition" onchange="updateRecipeDetails('V6', this.value)">
-                                <option value="0">方案A: 营养补充型</option><option value="1">方案B: 药肥一体防虫</option><option value="2">方案C: 化学控旺 (防倒伏专用)</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded border border-gray-200 p-3 shadow-inner" id="details-V6">
-            <div class="h-full flex flex-col justify-center space-y-2">
-                <div class="border-b pb-2 mb-1">
-                    <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">配方成分</span>
-                    <div class="text-sm font-bold text-green-700 break-words">尿素(叶喷) + 磷酸二氢钾 + 螯合锌</div>
-                </div>
-                <div class="grid grid-cols-2 gap-2 text-xs">
-                    <div>
-                        <span class="text-green-600 font-bold block">👍 优点</span>
-                        <span class="text-gray-500">纠正缺锌花白叶，促进茎秆粗壮。</span>
-                    </div>
-                    <div>
-                        <span class="text-red-500 font-bold block">👎 缺点/注意</span>
-                        <span class="text-gray-500">单纯营养，无防虫功能。</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-            </div><div class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition duration-300">
-                <div class="p-4 border-b border-gray-200 bg-white flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-green-100 p-2 rounded-full text-green-700">
-                            <span class="material-symbols-outlined">local_florist</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 text-lg">V9-V12 大喇叭口 (Bell Mouth)</h4>
-                            <div class="flex gap-2 text-[10px] mt-1">
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">thermostat</span> 高温高湿
-                                </span>
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">water_drop</span> 需水高峰
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-auto">
-                        <span class="text-xs font-bold text-red-500 bg-red-50 px-2 py-1 rounded border border-red-100 block md:inline text-center">
-                            ⚠️ 关键节点：行数已定，主攻粒数。此期受旱减产最严重。
-                        </span>
-                    </div>
-                </div>
-                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-2">
-                        <p class="text-sm text-gray-600 leading-relaxed">V9雄穗发育。V12时，种子行数已确定(受遗传主导)。每行粒数开始决定(V12-V17)。此期受旱或叶片损伤将严重影响穗大小。</p>
-                        <div class="mt-4">
-                            <label class="text-xs font-bold text-gray-500 block mb-1">选择植保方案:</label>
-                            <select class="w-full border-2 border-green-200 rounded p-2 text-sm font-bold text-green-800 bg-white focus:border-green-500 outline-none transition" onchange="updateRecipeDetails('V12', this.value)">
-                                <option value="0">方案A: 攻穗防虫型</option><option value="1">方案B: 飞防高效包</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded border border-gray-200 p-3 shadow-inner" id="details-V12">
-            <div class="h-full flex flex-col justify-center space-y-2">
-                <div class="border-b pb-2 mb-1">
-                    <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">配方成分</span>
-                    <div class="text-sm font-bold text-green-700 break-words">辛硫磷颗粒(丢心) + 尿素(根施)</div>
-                </div>
-                <div class="grid grid-cols-2 gap-2 text-xs">
-                    <div>
-                        <span class="text-green-600 font-bold block">👍 优点</span>
-                        <span class="text-gray-500">传统方法，成本极低，效果直接。</span>
-                    </div>
-                    <div>
-                        <span class="text-red-500 font-bold block">👎 缺点/注意</span>
-                        <span class="text-gray-500">人工成本高，效率低。</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-            </div><div class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition duration-300">
-                <div class="p-4 border-b border-gray-200 bg-white flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-green-100 p-2 rounded-full text-green-700">
-                            <span class="material-symbols-outlined">filter_vintage</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 text-lg">VT-R1 抽雄吐丝 (Tasseling)</h4>
-                            <div class="flex gap-2 text-[10px] mt-1">
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">thermostat</span> 忌&gt;30-35℃高温
-                                </span>
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">water_drop</span> 必须充足
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-auto">
-                        <span class="text-xs font-bold text-red-500 bg-red-50 px-2 py-1 rounded border border-red-100 block md:inline text-center">
-                            ⚠️ 热害预警：防花丝'结球'。虫害阈值：花丝被咬断至&lt;1cm且授粉&lt;50%需防治。
-                        </span>
-                    </div>
-                </div>
-                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-2">
-                        <p class="text-sm text-gray-600 leading-relaxed">授粉期。花粉散落高峰在上午9-10点。高温(&gt;30℃)减少散粉。干旱每天减产3-8%。冰雹致叶片脱落可致100%减产。</p>
-                        <div class="mt-4">
-                            <label class="text-xs font-bold text-gray-500 block mb-1">选择植保方案:</label>
-                            <select class="w-full border-2 border-green-200 rounded p-2 text-sm font-bold text-green-800 bg-white focus:border-green-500 outline-none transition" onchange="updateRecipeDetails('VT', this.value)">
-                                <option value="0">方案A: 授粉保卫战</option><option value="1">方案B: 一喷多效旗舰版</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded border border-gray-200 p-3 shadow-inner" id="details-VT">
-            <div class="h-full flex flex-col justify-center space-y-2">
-                <div class="border-b pb-2 mb-1">
-                    <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">配方成分</span>
-                    <div class="text-sm font-bold text-green-700 break-words">流体硼 + 芸苔素内酯 + 磷酸二氢钾</div>
-                </div>
-                <div class="grid grid-cols-2 gap-2 text-xs">
-                    <div>
-                        <span class="text-green-600 font-bold block">👍 优点</span>
-                        <span class="text-gray-500">提高花粉活力，减少秃尖，抗热干风。</span>
-                    </div>
-                    <div>
-                        <span class="text-red-500 font-bold block">👎 缺点/注意</span>
-                        <span class="text-gray-500">无杀菌杀虫功能。</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-            </div><div class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition duration-300">
-                <div class="p-4 border-b border-gray-200 bg-white flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-green-100 p-2 rounded-full text-green-700">
-                            <span class="material-symbols-outlined">grain</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 text-lg">R2-R4 灌浆乳熟 (Filling)</h4>
-                            <div class="flex gap-2 text-[10px] mt-1">
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">thermostat</span> 昼夜温差大好
-                                </span>
-                                <span class="bg-blue-50 text-blue-600 px-2 py-0.5 rounded border border-blue-100 flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-[10px]">water_drop</span> 保持湿润
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-auto">
-                        <span class="text-xs font-bold text-red-500 bg-red-50 px-2 py-1 rounded border border-red-100 block md:inline text-center">
-                            ⚠️ 适时晚收：苞叶变黄后推迟7-10天收获，增产5-10%。
-                        </span>
-                    </div>
-                </div>
-                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-2">
-                        <p class="text-sm text-gray-600 leading-relaxed">籽粒建成期。水泡期(R2)至乳熟期(R3)。若遇连续阴天、干旱 or 氮不足，尖端籽粒易败育(Abortion)。</p>
-                        <div class="mt-4">
-                            <label class="text-xs font-bold text-gray-500 block mb-1">选择植保方案:</label>
-                            <select class="w-full border-2 border-green-200 rounded p-2 text-sm font-bold text-green-800 bg-white focus:border-green-500 outline-none transition" onchange="updateRecipeDetails('R2', this.value)">
-                                <option value="0">方案A: 防衰增重</option><option value="1">方案B: 杀菌防病晚收</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded border border-gray-200 p-3 shadow-inner" id="details-R2">
-            <div class="h-full flex flex-col justify-center space-y-2">
-                <div class="border-b pb-2 mb-1">
-                    <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">配方成分</span>
-                    <div class="text-sm font-bold text-green-700 break-words">高浓度磷酸二氢钾 (100-200g/亩)</div>
-                </div>
-                <div class="grid grid-cols-2 gap-2 text-xs">
-                    <div>
-                        <span class="text-green-600 font-bold block">👍 优点</span>
-                        <span class="text-gray-500">促进灌浆，增加千粒重，防止倒伏。</span>
-                    </div>
-                    <div>
-                        <span class="text-red-500 font-bold block">👎 缺点/注意</span>
-                        <span class="text-gray-500">功能单一。</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-            </div></div>
+            <div class="space-y-6" id="protection-list"></div>
         </div>
     </section>
     <!-- 3. Fertilizer -->
@@ -624,7 +306,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
                             <option value="burn">🔥 秸秆焚烧 (氮损失 / 补钾磷)</option>
                             <option value="remove">🚜 秸秆打包 (养分全失 / 贫瘠)</option>
                         </select>
-                        <div class="mt-2 p-2 rounded text-xs border flex flex-col gap-1 bg-yellow-50 border-yellow-200 text-yellow-800" id="soilHealthFeedback"><div class="font-bold">⚠ 碳氮比调节：</div><div>1. 氮肥↑ (微生物消耗)。</div><div>2. 钾肥↓ (秸秆归还)。</div></div>
+                        <div class="mt-2 p-2 rounded text-xs border flex flex-col gap-1 bg-yellow-50 border-yellow-200 text-yellow-800" id="soilHealthFeedback"></div>
                     </div>
                     <div class="grid grid-cols-2 gap-3 mb-2">
                         <div>
@@ -662,7 +344,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
                                 <span class="text-[10px] text-green-600 bg-green-50 px-1 rounded">5kg/亩</span>
                             </label>
                             <div class="flex gap-2">
-                                <select class="flex-grow border border-gray-300 rounded p-2 text-xs bg-gray-50 truncate" id="seedFertSelect" onchange="handleFertTypeChange('seed')"><option value="-1">🚫 不施种肥</option><option value="0">26-12-10 控失保持型</option><option value="1">26-11-12 双控复合肥</option><option value="2">25-10-16 低氯复合肥</option><option value="3">25-10-13 中氯复合肥</option><option value="4">18-18-18 黄腐酸型</option><option value="5">18-18-18 双控复合肥</option><option value="6">14-16-15 硫酸钾型</option><option value="7">12-19-14 硫酸钾控失</option><option value="8">12-18-15 硫酸钾复合</option><option value="custom">🛠 自定义配方...</option></select>
+                                <select class="flex-grow border border-gray-300 rounded p-2 text-xs bg-gray-50 truncate" id="seedFertSelect" onchange="handleFertTypeChange('seed')"></select>
                                 <div class="w-20 relative">
                                     <span class="absolute left-1 top-2 text-gray-400 text-xs">¥</span>
                                     <input class="w-full border border-gray-300 rounded p-2 pl-4 text-xs" id="priceSeed" oninput="calculateAll()" placeholder="单价" type="number" value="4.2">
@@ -681,7 +363,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
                                 <span class="text-[10px] text-blue-600 bg-blue-50 px-1 rounded">翻地深施</span>
                             </label>
                             <div class="flex gap-2">
-                                <select class="flex-grow border border-gray-300 rounded p-2 text-xs bg-gray-50 truncate" id="baseFertSelect" onchange="handleFertTypeChange('base')"><option value="0">26-12-10 控失保持型</option><option value="1">26-11-12 双控复合肥</option><option value="2">25-10-16 低氯复合肥</option><option value="3">25-10-13 中氯复合肥</option><option value="4">18-18-18 黄腐酸型</option><option value="5">18-18-18 双控复合肥</option><option value="6">14-16-15 硫酸钾型</option><option value="7">12-19-14 硫酸钾控失</option><option value="8">12-18-15 硫酸钾复合</option><option value="custom">🛠 自定义配方...</option></select>
+                                <select class="flex-grow border border-gray-300 rounded p-2 text-xs bg-gray-50 truncate" id="baseFertSelect" onchange="handleFertTypeChange('base')"></select>
                                 <div class="w-20 relative">
                                     <span class="absolute left-1 top-2 text-gray-400 text-xs">¥</span>
                                     <input class="w-full border border-gray-300 rounded p-2 pl-4 text-xs" id="priceBase" oninput="calculateAll()" placeholder="单价" type="number" value="3.8">
@@ -851,7 +533,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             recipes: [
                 { name: "方案A: 常规种衣剂 (基础版)", mix: "苯醚甲环唑 + 噻虫嗪", pros: "成本低，对常见蚜虫、丝黑穗病有效。", cons: "对根腐病及顽固地下害虫持效期较短。" },
                 { name: "方案B: 双效加强版 (推荐)", mix: "精甲霜灵·咯菌腈 + 高含量吡虫啉 + 锌肥", pros: "强化防根腐，促进根系发育，苗齐苗壮。", cons: "种子处理成本稍高。" },
-                { name: "方案C: 封闭除草套餐 (播后苗前)", mix: "精异丙甲草胺 + 莠去津 + 乙草胺", pros: "封地效果好，早期无草害竞争。", cons: "需土壤湿度配合，干旱效果差。" }
+                { name: "方案C: 封闭除草套餐 (播后苗前)", mix: "精甲(精异丙甲草胺) + 莠去津 + 乙草胺", pros: "封地效果好，早期无草害竞争。", cons: "需土壤湿度配合，干旱效果差。", phi: "见具体药剂", mrl: "莠去津 0.05 mg/kg" }
             ]
         },
         {
@@ -864,8 +546,9 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             desc: "除草最佳窗口期。生长点位于地下(V6前)，对轻微霜冻/冰雹有耐受力。如遇低温/缺磷/根系受阻，叶片可能变紫(花青素积累)。",
             alert: "除草剂药害预警：避开高温，避开3叶前5叶后。紫苗通常随气温回升消失。",
             recipes: [
-                { name: "方案A: 标准除草 (安全型)", mix: "烟嘧磺隆·莠去津 + 安全剂", pros: "杀草谱广，对玉米相对安全。", cons: "对由于环境压力大的弱苗可能有轻微抑制。" },
-                { name: "方案B: 苗后除草+提苗复配", mix: "烟嘧·莠 + 氨基酸水溶肥 + 芸苔素内酯", pros: "除草同时缓解药害，促进生长，叶片浓绿。", cons: "混配需注意酸碱性，成本增加。" }
+                { name: "方案A: 标准除草 (安全型)", mix: "烟嘧磺隆·莠去津 + 安全剂（异恶唑草醚、解草嗪、解草胺）", pros: "杀草谱广，对玉米相对安全。", cons: "对由于环境压力大的弱苗可能有轻微抑制。", phi: "30-45天", mrl: "莠去津 0.05 mg/kg" },
+                { name: "方案B: 苗后除草+提苗复配", mix: "烟嘧·莠 + 氨基酸水溶肥 + 芸苔素内酯", pros: "除草同时缓解药害，促进生长，叶片浓绿。", cons: "混配需注意酸碱性，成本增加。" },
+                { name: "方案C: 辛酰溴苯腈 (精准窗口型)", mix: "辛酰溴苯腈", pros: "3-4叶期效果极佳，对阔叶杂草特效。", cons: "严格限制在玉米3-4叶期使用。", phi: "见标签", mrl: "0.1 mg/kg" }
             ]
         },
         {
@@ -875,12 +558,12 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             icon: "nature",
             temp: "生长旺盛期",
             water: "需水增加",
-            desc: "生长点出土，茎秆快速伸长。节根成为主要根系。此时若地表干旱，易发生'无根/倒伏玉米'综合征(Rootless Corn)。需肥临界期。",
+            desc: "生长点出土，茎秆快速伸长。节根成为主要根系。此时若地表干旱，易发生'无根/倒伏玉米'综合征(Rootless Corn)。需肥临界期。控旺不控肥，控旺不控长",
             alert: "追肥提示：结合降雨或灌溉追施氮肥。若遇洪涝，淹水不可超2-4天。",
             recipes: [
                 { name: "方案A: 营养补充型", mix: "尿素(叶喷) + 磷酸二氢钾 + 螯合锌", pros: "纠正缺锌花白叶，促进茎秆粗壮。", cons: "单纯营养，无防虫功能。" },
-                { name: "方案B: 药肥一体防虫", mix: "氯虫苯甲酰胺 + 甲维盐 + 腐植酸叶面肥", pros: "强力杀灭二代粘虫、玉米螟，持效期长。", cons: "氯虫苯甲酰胺单价较高。" },
-                { name: "方案C: 化学控旺 (防倒伏专用)", mix: "乙烯利 / 胺鲜·乙烯利 (6-10叶期)", pros: "降低株高，增粗茎秆，显著抗倒伏。", cons: "需严格把控浓度与时期，干旱禁用。" }
+                { name: "方案B: 药肥一体防虫", mix: "氯虫苯甲酰胺 + 甲维盐 + 腐植酸叶面肥", pros: "强力杀灭二代粘虫、玉米螟，持效期长。", cons: "氯虫苯甲酰胺单价较高。", phi: "21天", mrl: "氯虫 0.02 mg/kg" },
+                { name: "方案C: 化学控旺 (防倒伏专用)", mix: "乙烯利+磷酸二氢钾 / 胺鲜酯·乙烯利", pros: "降低株高，增粗茎秆，显著抗倒伏。", cons: "需严格把控浓度与时期，干旱禁用。", phi: "见标签", mrl: "乙烯利 0.5 mg/kg" }
             ]
         },
         {
@@ -890,11 +573,11 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             icon: "local_florist",
             temp: "高温高湿",
             water: "需水高峰",
-            desc: "V9雄穗发育。V12时，种子行数已确定(受遗传主导)。每行粒数开始决定(V12-V17)。此期受旱或叶片损伤将严重影响穗大小。",
+            desc: "V9雄穗发育。V12时，种子行数已确定(受遗传主导)。每行粒数开始决定(V12-V17)。此期受旱或叶片损伤将严重影响穗大小。最佳时期是V10到V12阶段。",
             alert: "关键节点：行数已定，主攻粒数。此期受旱减产最严重。",
             recipes: [
-                { name: "方案A: 攻穗防虫型", mix: "辛硫磷颗粒(丢心) + 尿素(根施)", pros: "传统方法，成本极低，效果直接。", cons: "人工成本高，效率低。" },
-                { name: "方案B: 飞防高效包", mix: "甲维·茚虫威 + 吡唑醚菌酯 + 磷酸二氢钾", pros: "杀虫彻底，防大斑病，叶片保绿。", cons: "需无人机作业。" }
+                { name: "方案A: 攻穗防虫型", mix: "辛硫磷颗粒(丢心) + 尿素(根施)", pros: "传统方法，成本极低，效果直接。", cons: "人工成本高，效率低。", phi: "见标签", mrl: "0.05 mg/kg" },
+                { name: "方案B: 飞防高效包", mix: "甲维·茚虫威 + 吡唑醚菌酯 + 磷酸二氢钾", pros: "杀虫彻底，防大斑病，叶片保绿。", cons: "需无人机作业。", phi: "14天", mrl: "茚虫威 0.1 mg/kg" }
             ]
         },
         {
@@ -904,11 +587,11 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             icon: "filter_vintage",
             temp: "忌>30-35℃高温",
             water: "必须充足",
-            desc: "授粉期。花粉散落高峰在上午9-10点。高温(>30℃)减少散粉。干旱每天减产3-8%。冰雹致叶片脱落可致100%减产。",
+            desc: "授粉期。花粉散落高峰在上午9-10点。高温(>30℃)减少散粉。干旱每天减产3-8%。冰雹致叶片脱落可致100%减产。见雄喷药，见丝增效，雄穗刚全部抽出，或者有 10% - 20% 的植株开始露出花丝时",
             alert: "热害预警：防花丝'结球'。虫害阈值：花丝被咬断至<1cm且授粉<50%需防治。",
             recipes: [
                 { name: "方案A: 授粉保卫战", mix: "流体硼 + 芸苔素内酯 + 磷酸二氢钾", pros: "提高花粉活力，减少秃尖，抗热干风。", cons: "无杀菌杀虫功能。" },
-                { name: "方案B: 一喷多效旗舰版", mix: "吡唑醚菌酯 + 噻虫嗪 + 苯甲·丙环唑 + 硼 + 磷二", pros: "防病(锈病/斑病)、防虫(蚜虫)、增产全覆盖。", cons: "单亩成本最高，但投入产出比高。" }
+                { name: "方案B: 一喷多效旗舰版", mix: "吡唑醚菌酯 + 噻虫嗪 + 苯甲(苯醚甲环唑)·丙环唑 + 硼 + 磷酸二氢钾", pros: "防病(锈病/斑病)、防虫(蚜虫)、增产全覆盖。", cons: "单亩成本最高，但投入产出比高。", phi: "28天", mrl: "噻虫嗪 0.1 mg/kg" }
             ]
         },
         {
@@ -919,10 +602,10 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             temp: "昼夜温差大好",
             water: "保持湿润",
             desc: "籽粒建成期。水泡期(R2)至乳熟期(R3)。若遇连续阴天、干旱 or 氮不足，尖端籽粒易败育(Abortion)。",
-            alert: "适时晚收：苞叶变黄后推迟7-10天收获，增产5-10%。",
+            alert: "⚠️ 适时晚收：苞叶变黄后推迟7-10天收获，增产5-10%。注意：若后期喷施苯醚甲环唑，需留足7-14天安全间隔期。",
             recipes: [
                 { name: "方案A: 防衰增重", mix: "高浓度磷酸二氢钾 (100-200g/亩)", pros: "促进灌浆，增加千粒重，防止倒伏。", cons: "功能单一。" },
-                { name: "方案B: 杀菌防病晚收", mix: "戊唑醇/氟环唑 + 磷酸二氢钾", pros: "特效治疗南方锈病，保叶功能强。", cons: "后期作业需高杆喷雾机 or 飞机。" }
+                { name: "方案B: 杀菌防病晚收", mix: "苯醚甲环唑 + 戊唑醇/氟环唑 + 磷酸二氢钾", pros: "特效治疗南方锈病，保叶功能强。", cons: "后期作业需高杆喷雾机 or 飞机。", phi: "7-14天", mrl: "苯甲 0.5 mg/kg" }
             ]
         }
     ];
@@ -1006,6 +689,8 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
                         <span class="text-red-500 font-bold block">👎 缺点/注意</span>
                         <span class="text-gray-500">${recipe.cons}</span>
                     </div>
+                    ${recipe.phi ? `<div><span class="text-blue-600 font-bold block">⏱ 安全间隔</span><span class="text-gray-500">${recipe.phi}</span></div>` : ''}
+                    ${recipe.mrl ? `<div><span class="text-orange-600 font-bold block">🔬 残留限量</span><span class="text-gray-500">${recipe.mrl}</span></div>` : ''}
                 </div>
             </div>
         `;
